@@ -2,9 +2,12 @@
 import './App.css'
 import Header from './components/Header';
 import Body from './components/Body';
+import appStore from './redux/appStore';
+import { Provider } from 'react-redux';
 function App() {
   return (
-    <div className="App">
+    <Provider store={appStore}>
+      <div className="App">
       <Header />
       <Body />
 
@@ -21,6 +24,7 @@ function App() {
        */
     }
     </div>
+    </Provider>
    
   );
 }

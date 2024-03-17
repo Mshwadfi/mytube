@@ -1,9 +1,18 @@
 import React from 'react'
+import Button from './Button';
 
 const CustomButtons = () => {
+
+  const buttonList = ['ComputerEngineering', 'Football',
+  'Laliga','Futsal','Javascript','PremierLegue',
+  'Dribbling','RealMadridFC','Podcasts','Africans'];
   return (
-    <div>
-      buttons
+    <div className='flex items-center overflow-x-auto'>
+      {
+        buttonList.map(button =>(
+          <Button key={button} name={button} />
+        ))
+      }
     </div>
   )
 }

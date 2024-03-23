@@ -7,7 +7,7 @@ const CustomButtons = () => {
   'Laliga','Futsal','Javascript','PremierLegue',
   'Dribbling','RealMadridFC','Podcasts','Africans'];
   return (
-    <div className='flex items-center overflow-x-auto'>
+    <div className='flex items-center overflow-x-hidden'>
       {
         buttonList.map(button =>(
           <Button key={button} name={button} />

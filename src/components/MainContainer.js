@@ -3,8 +3,7 @@ import CustomButtons from './CustomButtons'
 import VideoContainer from './VideoContainer'
 const MainContainer = () => {
   return (
-    <div>
-      main
+    <div className='m-2 overflow-y-auto'>
       <CustomButtons />
       <VideoContainer />
     </div>
